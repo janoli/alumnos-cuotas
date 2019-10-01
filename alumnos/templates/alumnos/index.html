@@ -1,7 +1,7 @@
 {% if latest_alumno_list %}
 	<ul>
 		{% for alumno in latest_alumno_list %}
-		<li> {{ alumno.apellido_text }}, {{ alumno.nombre_text }}
+		<li> {{ alumno.alumno }} -- {{ alumno.cursando }} 
 		</li>
 
 	{% endfor %}

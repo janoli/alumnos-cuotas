@@ -26,4 +26,4 @@ class Inscripcion(models.Model):
     cursando = models.ForeignKey(Curso, on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.alumno.apellido_text + ", " + self.alumno.nombre_text + "@" +self.cursando.curso_text
+        return self.alumno.apellido_text + ", " + self.alumno.nombre_text + " @ " +self.cursando.curso_text
